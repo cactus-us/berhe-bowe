@@ -1,0 +1,14 @@
+.title {
+    margin-left : 10%;
+}
+
+.paragraph {
+    margin-left : 10%;
+    margin-right : 10%;
+}
+
+#owners-together {
+    max-width : 60%;
+    margin : 0 auto;
+    display : block;
+}
