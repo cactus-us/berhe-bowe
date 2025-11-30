@@ -1,5 +1,7 @@
 .title {
     margin-left : 10%;
+    margin-right : 10%;
+    font-size: 2rem;
 }
 
 .paragraph {
@@ -8,7 +10,75 @@
 }
 
 #owners-together {
-    max-width : 60%;
+    max-width : 50%;
     margin : 0 auto;
     display : block;
+}
+
+.home-page-order {
+    border-collapse: collapse;
+    text-align: center;
+    margin-bottom: 0;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+#home-page-order-title {
+    margin-right: 10%;
+    margin-left: 10%;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#home-page-order td {
+    padding: 5px;
+    vertical-align: middle;
+}
+
+.home-page-button {
+    padding: 10px 10px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.home-page-button:hover{
+    
+}
+
+#home-page-locations-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5rem;
+}
+
+#home-page-loc-title {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.home-loc-cont-div{
+    flex: 0 0 33%;
+    margin: 0.5rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.home-page-loc-img {
+    width: 100%;
+    min-height: 80%;
+    height: auto;
+    border-radius: 2px;
+    display: block;
+}
+
+.home-page-loc-cont-titles {
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.home-page-loc-cont-addr { 
+    font-size: 1rem;
+    margin-top: 5px;
 }

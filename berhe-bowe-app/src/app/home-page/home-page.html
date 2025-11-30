@@ -1,5 +1,51 @@
-<h1 class="title">Welcome to Luigi's!</h1>
+<div id="home-page-intro">
+    <h1 class="title">Welcome to Luigi's!</h1>
 
-<p class="paragraph">We are a family-owned restaurant that has been proud to serve the Villanova area for over 75 years. Our original founder was Luigi himself. Since his passing in 2011, his sons have gained ownership. They can be seen in the picture below. From left to right are Nick, Luigi Jr., and Paul.</p>
+    <p class="paragraph">We are a family-owned restaurant that has been proud to serve the Villanova area for over 75 years. Our original founder was Luigi himself. Since his passing in 2011, his sons have gained ownership. They can be seen in the picture below. From left to right are Nick, Luigi Jr., and Paul.</p>
 
-<img src="SonOwnersStandingUp.jpg" alt="Owners Together" id = "owners-together"/>
+    <img src="SonOwnersStandingUp.jpg" alt="Owners Together" id = "owners-together"/>
+</div>
+
+<table id="home-page-order">
+    <tbody>
+        <tr>
+            <td>
+                <h2 id="home-page-order-title">Dine-in or order pick-up/delivery from any of our locations below.</h2>
+            </td>
+
+            <td>
+                <button class="home-page-button" (click) = "onMenuViewClick()">
+                    View Menus and Order Food
+                </button>
+            </td>
+
+            <td>
+                <button class="home-page-button" (click) = "onCateringOrderClick()">
+                    Order Catering
+                </button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<div id="home-page-loc">
+    <h4 id="home-page-loc-title">Locations</h4>
+
+    <div id="home-page-locations-container">
+        <div class="home-loc-cont-div">
+            <img src="LuigisBrynMawrStorefront.jpg" alt="Luigi's Bryn Mawr" class="home-page-loc-img"/>
+            <div class="home-page-loc-cont-titles">Luigi's - Bryn Mawr</div>
+            <div class="home-page-loc-cont-addr">652 Lee Avenue, Bryn Mawr, PA, 19010</div>
+        </div>
+        <div class="home-loc-cont-div">
+            <img src="LuigisStDavidsStorefront.jpg" alt="Luigi's St. Davids" class="home-page-loc-img"/>
+            <div class="home-page-loc-cont-titles">Luigi's - St. Davids</div>
+            <div class="home-page-loc-cont-addr">323 E. Lancaster Ave, St. Davids, PA, 19087</div>
+        </div>
+        <div class="home-loc-cont-div">
+            <img src="LuigisArdmoreStorefront.jpg" alt="Luigi's Ardmore" class="home-page-loc-img"/>
+            <div class="home-page-loc-cont-titles">Luigi's - Ardmore</div>
+            <div class="home-page-loc-cont-addr">37 Rittenhouse Pl, Ardmore, PA, 19003</div>
+        </div>
+    </div>
+</div>
