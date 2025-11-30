@@ -6,27 +6,19 @@
     <img src="SonOwnersStandingUp.jpg" alt="Owners Together" id = "owners-together"/>
 </div>
 
-<table id="home-page-order">
-    <tbody>
-        <tr>
-            <td>
-                <h2 id="home-page-order-title">Dine-in or order pick-up/delivery from any of our locations below.</h2>
-            </td>
+<div id="home-page-order">
+    <h2 id="home-page-order-title">
+        Dine-in or order pick-up/delivery from any of our locations below.
+    </h2>
 
-            <td>
-                <button class="home-page-button" (click) = "onMenuViewClick()">
-                    View Menus and Order Food
-                </button>
-            </td>
+    <button class="home-page-button" (click)="onMenuViewClick()">
+        View Menus and Order Food
+    </button>
 
-            <td>
-                <button class="home-page-button" (click) = "onCateringOrderClick()">
-                    Order Catering
-                </button>
-            </td>
-        </tr>
-    </tbody>
-</table>
+    <button class="home-page-button" (click)="onCateringOrderClick()">
+        Order Catering
+    </button>
+</div>
 
 <div id="home-page-loc">
     <h4 id="home-page-loc-title">Locations</h4>
@@ -47,5 +39,24 @@
             <div class="home-page-loc-cont-titles">Luigi's - Ardmore</div>
             <div class="home-page-loc-cont-addr">37 Rittenhouse Pl, Ardmore, PA, 19003</div>
         </div>
+    </div>
+</div>
+
+<h1 id="customer-reviews">Customer Reviews</h1>
+
+<div id="reviews-cont">
+    <div class="review">
+        <body>Great food, cozy vibe, and fast service! Luigi's never misses.</body>
+        <p>- Gene P.</p>
+    </div>
+
+    <div class="review">
+        <body>Went to Luigi's for a light meal. Left needing a nap and a new lifestyle plan!</body>
+        <p>- Teresa C.</p>
+    </div>
+
+    <div class="review">
+        <body>After one bite of the fettuccine, I swear I heard violins playing.</body>
+        <p>- Allen K.</p>
     </div>
 </div>
