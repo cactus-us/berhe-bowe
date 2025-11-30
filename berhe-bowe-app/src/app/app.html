@@ -1,22 +1,28 @@
-<div class = "header-container" >
-  <mat-toolbar>
-      <!-- Logo -->
-      <span>
-        <img src="logo.png" alt="Logo" id = "logo" />
-      </span>
+<div class="website-container">
+  <div class = "header-container" >
+    <mat-toolbar>
+        <!-- Logo -->
+        <span>
+          <img src="logo.png" alt="Logo" class = "logo" />
+        </span>
 
-      <span class = "fill-header-space"> </span>
+        <span class = "fill-header-space"> </span>
 
-      <!-- Menu Options -->
-      <span id = "header-toolbar">
-        <button mat-button routerLink="/home">Home</button>
-        <button mat-button routerLink="/about">About</button>
-        <button mat-button routerLink="/locations">Locations</button>
-        <button mat-button routerLink="/menu">Menu</button>
-        <button mat-button routerLink="/catering">Catering</button>
-        <button mat-button routerLink="/contactUs">Contact Us</button>
-      </span>
-  </mat-toolbar>
+        <!-- Menu Options -->
+        <span id = "header-toolbar">
+          <button mat-button routerLink="/home">Home</button>
+          <button mat-button routerLink="/about">About</button>
+          <button mat-button routerLink="/locations">Locations</button>
+          <button mat-button routerLink="/menu">Menu</button>
+          <button mat-button routerLink="/catering">Catering</button>
+          <button mat-button routerLink="/contactUs">Contact Us</button>
+        </span>
+    </mat-toolbar>
+  </div>
+
+  <main>
+    <router-outlet />
+  </main>
+
+  <app-luigis-footer></app-luigis-footer>
 </div>
-
-<router-outlet />

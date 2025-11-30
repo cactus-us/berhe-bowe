@@ -15,7 +15,7 @@ mat-toolbar {
     align-items : center;
 }
 
-#logo {
+.logo {
     height: 65px;
     padding : 5px;
     padding-top : 20px;
@@ -34,4 +34,8 @@ mat-toolbar {
     justify-content : center;
     justify-items : flex-end;
     gap : 10px;
+}
+
+#header-toolbar button:hover {
+    transform: scale(1.1);
 }
