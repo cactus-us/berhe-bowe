@@ -1,0 +1,21 @@
+#about-title {
+    margin-left: 5rem;
+}
+
+#about-par-1{
+    margin-right: 2rem;
+}
+
+#about-separation {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: flex-start;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+#about-image {
+    max-width : 40%;
+    height: auto;
+}

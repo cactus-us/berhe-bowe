@@ -1,5 +1,4 @@
-import { Routes } from '@angular/router';
-
+import { RouterModule, Routes } from '@angular/router';
 import { HomePage } from './home-page/home-page';
 import { AboutPage } from './about-page/about-page';
 import { LocationsPage } from './locations-page/locations-page';
@@ -14,9 +13,5 @@ export const routes: Routes = [
     { path : 'menu', component: MenuPage, title: 'Menu' },
     { path : 'catering', component: CateringPage, title: 'Catering' },
     { path : 'contactUs', component: ContactUsPage, title: 'Contact Us' },
-    { path : '', redirectTo: '/home', pathMatch: 'full' },
+    { path : '', redirectTo: 'home', pathMatch: 'full' }
 ];
-
-const routeConfig : Routes = [
-    
-]
