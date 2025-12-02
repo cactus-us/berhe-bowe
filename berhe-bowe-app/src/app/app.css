@@ -22,6 +22,7 @@ mat-toolbar {
     align-items: center;
     justify-content : center;
     justify-items : flex-start;
+    cursor: pointer;
 }
 
 .fill-header-space {

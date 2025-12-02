@@ -14,10 +14,12 @@ export class CateringInformation {
   name = new FormControl('');
   phone = new FormControl('');
   email = new FormControl('');
+  people = new FormControl('');
   company = new FormControl('');
   date = new FormControl('');
   time = new FormControl('');
   occasion = new FormControl('');
+  description = new FormControl('');
 
   submitInformation() {
     this.router.navigate ( [ '../catering-order' ] );
