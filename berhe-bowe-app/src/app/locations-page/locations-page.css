@@ -1,0 +1,57 @@
+.locations-page {
+  width: 90%;
+  margin: auto;
+  padding-top: 20px;
+}
+
+/* Header */
+h2 {
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  color: #444;
+  margin-bottom: 30px;
+}
+
+/* Grid */
+.locations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.location-card {
+  text-align: left;
+}
+
+.location-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Food images section */
+.images-section {
+  margin: 40px 0;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.images-section img {
+  width: 40%;
+  border-radius: 5px;
+}
+
+/* Footer text */
+.footer-text {
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+  line-height: 1.6;
+  font-size: 16px;
+  color: #444;
+}
