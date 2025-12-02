@@ -1,0 +1,38 @@
+<div class="catering-entry">
+    <label for="name">Full Name: </label>
+    <input id="name" type="text" [formControl]="name">
+</div>
+
+<div class="catering-entry">
+    <label for="phone">Phone: </label>
+    <input id="phone" type="text" [formControl]="phone">
+</div>
+
+<div class="catering-entry">
+    <label for="email">Email: </label>
+    <input id="email" type="text" [formControl]="email">
+</div>
+
+<div class="catering-entry">
+    <label for="company">Company: </label>
+    <input id="company" type="text" [formControl]="company">
+</div>
+
+<div class="catering-entry">
+    <label for="date">Date: </label>
+    <input id="date" type="text" [formControl]="date">
+</div>
+
+<div class="catering-entry">
+    <label for="time">Pickup Time: </label>
+    <input id="time" type="text" [formControl]="time">
+</div>
+
+<div class="catering-entry">
+    <label for="occasion">Occasion: </label>
+    <input id="occasion" type="text" [formControl]="occasion">
+</div>
+
+<div>
+    <button type="button" (click)="submitInformation()">Submit</button>
+</div>
