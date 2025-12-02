@@ -2,11 +2,11 @@
 
 /* html, body { height: 100%; } */
 /* headers and such use Playfair Display */
-h1, h2, h3, h4, h5, h6, mat-toolbar, button {
+h1, h2, h3, h4, h5, h6, mat-toolbar, button, label {
     font-family: 'Playfair Display', serif;
 }
 
 /* body uses uses Merriweather */
-body, p, span, div {
+body, p, span, div, input, textarea, select {
     font-family: 'Merriweather', serif;
 }

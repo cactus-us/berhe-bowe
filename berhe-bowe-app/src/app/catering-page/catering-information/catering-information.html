@@ -1,48 +1,86 @@
-<div class="catering-entry">
-    <label for="name">Full Name: </label>
-    <input id="name" type="text" [formControl]="name">
-</div>
+<form [formGroup] = "cateringForm">
+    <div class="catering-entry">
+        <div>
+            <label for="name" class="form-subheader">Full Name: </label>
+        </div>
+        <div>
+            <input class="catering-form-box" type="text" formControlName="name">
+        </div>
+    </div>
 
-<div class="catering-entry">
-    <label for="phone">Phone: </label>
-    <input id="phone" type="text" [formControl]="phone">
-</div>
+    <div class="catering-entry">
+        <div>
+            <label for="phone" class="form-subheader">Phone: </label>
+        </div>
+        <div>
+            <input class="catering-form-box" type="text" formControlName="phone">
+        </div>
+    </div>
 
-<div class="catering-entry">
-    <label for="email">Email: </label>
-    <input id="email" type="text" [formControl]="email">
-</div>
+    <div class="catering-entry">
+        <div>
+            <label for="email" class="form-subheader">Email: </label>
+        </div>
+        <div>
+            <input class="catering-form-box" type="text" formControlName="email">
+        </div>
+    </div>
 
-<div class="catering-entry">
-    <label for="people">Number of People: </label>
-    <input id="people" type="text" [formControl]="people">
-</div>
+    <div class="catering-entry">
+        <div>
+            <label for="people" class="form-subheader">Number of People: </label>
+        </div>
+        <div>
+            <input class="catering-form-box" type="text" formControlName="people">
+        </div>
+    </div>
 
-<div class="catering-entry">
-    <label for="company">Company: </label>
-    <input id="company" type="text" [formControl]="company">
-</div>
+    <div class="catering-entry">
+        <div>
+            <label for="company" class="form-subheader">Company: </label>
+        </div>
+        <div>
+            <input class="catering-form-box" type="text" formControlName="company">
+        </div>
+    </div>
 
-<div class="catering-entry">
-    <label for="date">Date: </label>
-    <input id="date" type="text" [formControl]="date">
-</div>
+    <div class="catering-entry">
+        <div>
+            <label for="date" class="form-subheader">Date (MM-DD-YYYY) : </label>
+        </div>
+        <div>
+            <input class="catering-form-box" type="text" formControlName="date">
+        </div>
+    </div>
 
-<div class="catering-entry">
-    <label for="time">Pickup Time: </label>
-    <input id="time" type="text" [formControl]="time">
-</div>
+    <div class="catering-entry">
+        <div>
+            <label for="time" class="form-subheader">Pickup Time: </label>
+        </div>
+        <div>
+            <input class="catering-form-box" type="text" formControlName="time">
+        </div>
+    </div>
 
-<div class="catering-entry">
-    <label for="occasion">Occasion: </label>
-    <input id="occasion" type="text" [formControl]="occasion">
-</div>
+    <div class="catering-entry">
+        <div>
+            <label for="occasion" class="form-subheader">Occasion: </label>
+        </div>
+        <div>
+            <input class="catering-form-box" type="text" formControlName="occasion">
+        </div>
+    </div>
 
-<div class="catering-entry">
-    <label for="description">Description: </label>
-    <input id="description" type="text" [formControl]="description">
-</div>
+    <div class="catering-entry">
+        <div>
+            <label for="description" class="form-subheader">Description: </label>
+        </div>
+        <div>
+            <input class="catering-larger-form-box" type="text" formControlName="description">
+        </div>
+    </div>
 
-<div>
-    <button type="button" (click)="submitInformation()">Submit</button>
-</div>
+    <div>
+        <button type="button" (click)="submitInformation()" id="catering-information-button">Submit</button>
+    </div>
+</form>

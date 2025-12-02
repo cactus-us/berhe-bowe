@@ -1,0 +1,26 @@
+.catering-entry {
+    margin: 2rem 5rem 2rem 5rem;
+    font-size: 1.1rem;
+}
+
+.form-subheader {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+#catering-information-button{
+    margin: 0 5rem 2rem 5rem;
+    float: right;
+}
+
+.catering-form-box {
+    width: 20rem;
+    height: 2rem;
+    font-size: 16px;
+}
+
+.catering-larger-form-box {
+    width: 400px;
+    height: 100px;
+    font-size: 16px;
+}
