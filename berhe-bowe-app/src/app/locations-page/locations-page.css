@@ -1,57 +1,85 @@
-.locations-page {
-  width: 90%;
-  margin: auto;
-  padding-top: 20px;
+.page-container {
+  padding: 40px 20px;
 }
 
-/* Header */
-h2 {
-  font-size: 28px;
+.title {
+  font-size: 2rem;
+  margin-left: 5rem;
   margin-bottom: 5px;
 }
 
 .subtitle {
+  font-size: 1rem;
+  margin-left: 5rem;
+  margin-bottom: 40px;
   color: #444;
-  margin-bottom: 30px;
 }
 
-/* Grid */
 .locations-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-left: 5rem;
+  margin-right: 5rem;
 }
 
 .location-card {
-  text-align: left;
-}
-
-.location-card img {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
-  margin-bottom: 10px;
-}
-
-/* Food images section */
-.images-section {
-  margin: 40px 0;
+  padding: 30px;
+  border: 1px solid black;
+  border-radius: 2px;
   display: flex;
-  gap: 20px;
-  justify-content: center;
+  flex-direction: row;
+  gap: 30px;
+  align-items: flex-start;
 }
 
-.images-section img {
+.location-img {
   width: 40%;
-  border-radius: 5px;
+  max-width: 400px;
+  border-radius: 2px;
+  flex-shrink: 0;
 }
 
-/* Footer text */
-.footer-text {
-  width: 80%;
-  margin: auto;
-  margin-top: 20px;
+.location-info {
+  flex: 1;
+}
+
+.location-name {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.info {
+  margin: 8px 0;
+  color: #333;
   line-height: 1.6;
-  font-size: 16px;
-  color: #444;
+}
+
+.party-section {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+}
+
+.party-section h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.party-room-img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 2px;
+  margin: 10px 0;
+  display: block;
+}
+
+.price {
+  margin-top: 10px;
+  color: #000;
+  font-weight: bold;
 }

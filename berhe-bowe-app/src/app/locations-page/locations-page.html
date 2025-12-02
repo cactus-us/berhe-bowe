@@ -1,34 +1,26 @@
-<div class="locations-page">
-  <h2>Locations</h2>
-  <p class="subtitle">Our three wonderful locations</p>
+<section class="page-container">
+
+  <h1 class="title">Locations</h1>
+  <p class="subtitle">Visit our three welcoming Luigi’s locations</p>
 
   <div class="locations-grid">
-
     <div class="location-card" *ngFor="let loc of locations">
-      <img [src]="loc.image" alt="Location Image" />
+      <img [src]="loc.image" class="location-img">
 
-      <h3>{{ loc.name }}</h3>
-      <p>{{ loc.address }}</p>
-      <p>{{ loc.phone }}</p>
-      <p><strong>Hours:</strong> {{ loc.hours }}</p>
+      <div class="location-info">
+        <h2 class="location-name">{{ loc.name }}</h2>
+
+        <p class="info"><strong>Address:</strong> {{ loc.address }}</p>
+        <p class="info"><strong>Phone:</strong> {{ loc.phone }}</p>
+        <p class="info"><strong>Hours:</strong> {{ loc.hours }}</p>
+
+        <div class="party-section">
+          <h3>Party Room</h3>
+          <img [src]="loc.roomImage" class="party-room-img">
+          <p class="price"><strong>Rental Price:</strong> {{ loc.rentPrice }}</p>
+        </div>
+      </div>
     </div>
-
   </div>
 
-  <div class="images-section">
-    <img src="assets/food1.jpg" alt="Food photo" />
-    <img src="assets/food2.jpg" alt="Food photo" />
-  </div>
-
-  <div class="footer-text">
-    <p>
-      Encounter wholesome strength, with everyone whose spirit stirs up others through our comforting homemade meals.
-      Luigi’s combines tradition with warm hospitality, bringing everyone together.
-    </p>
-
-    <p>
-      Beneath the candlelight, our passion shines through every recipe. We remain committed to quality,
-      memorable flavor, and the delightful warmth that defines the Luigi’s experience.
-    </p>
-  </div>
-</div>
+</section>
