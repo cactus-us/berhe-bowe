@@ -1,9 +1,11 @@
 #about-title {
     margin-left: 5rem;
+    margin-top: 1rem;
 }
 
 #about-par-1{
     margin-right: 2rem;
+    line-height: 2rem;
 }
 
 #about-separation {
@@ -18,4 +20,53 @@
 #about-image {
     max-width : 40%;
     height: auto;
+}
+
+.about-paragraph {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 1rem;
+    line-height: 2rem;
+}
+
+#second-par-food {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    flex: 1 1 1;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;   
+}
+
+#second-par-food img {
+    max-width: 10rem;
+    max-height: 10rem;
+    display: block;
+}
+
+#second-par-food p {
+    font-size: 0.75rem;
+}
+
+#about-party-rooms {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    flex: 1 1 1;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;   
+}
+
+#about-party-rooms img {
+    max-width: 22rem;
+    max-height: 22rem;
+    display: block;
+}
+
+#about-party-rooms p {
+    font-size: 0.75rem;
 }
