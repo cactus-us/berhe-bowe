@@ -1,82 +1,127 @@
 <form [formGroup] = "cateringForm">
     <div class="catering-entry">
         <div>
-            <label for="name" class="form-subheader">Full Name: </label>
+            <label for="name" class="form-subheader">
+                Full Name: <span *ngIf="requiredField('name')" class="required">*</span>
+            </label>
         </div>
         <div>
-            <input class="catering-form-box" type="text" formControlName="name">
-        </div>
-    </div>
-
-    <div class="catering-entry">
-        <div>
-            <label for="phone" class="form-subheader">Phone: </label>
-        </div>
-        <div>
-            <input class="catering-form-box" type="text" formControlName="phone">
+            <input class="catering-form-box" [class.invalid]="invalidField('name')" type="text" formControlName="name">
+            <div *ngIf="invalidField('name')" class="error-message">
+                {{errorMessage('name')}}
+            </div>
         </div>
     </div>
 
     <div class="catering-entry">
         <div>
-            <label for="email" class="form-subheader">Email: </label>
+            <label for="phone" class="form-subheader">
+                Phone: <span *ngIf="requiredField('phone')" class="required">*</span>
+            </label>
         </div>
         <div>
-            <input class="catering-form-box" type="text" formControlName="email">
-        </div>
-    </div>
-
-    <div class="catering-entry">
-        <div>
-            <label for="people" class="form-subheader">Number of People: </label>
-        </div>
-        <div>
-            <input class="catering-form-box" type="text" formControlName="people">
+            <input class="catering-form-box" [class.invalid]="invalidField('phone')" type="text" formControlName="phone">
+            <div *ngIf="invalidField('phone')" class="error-message">
+                {{errorMessage('phone')}}
+            </div>
         </div>
     </div>
 
     <div class="catering-entry">
         <div>
-            <label for="company" class="form-subheader">Company: </label>
+            <label for="email" class="form-subheader">
+                Email: <span *ngIf="requiredField('email')" class="required">*</span>
+            </label>
         </div>
         <div>
-            <input class="catering-form-box" type="text" formControlName="company">
-        </div>
-    </div>
-
-    <div class="catering-entry">
-        <div>
-            <label for="date" class="form-subheader">Date (MM-DD-YYYY) : </label>
-        </div>
-        <div>
-            <input class="catering-form-box" type="text" formControlName="date">
+            <input class="catering-form-box" [class.invalid]="invalidField('email')" type="text" formControlName="email">
+            <div *ngIf="invalidField('email')" class="error-message">
+                {{errorMessage('email')}}
+            </div>
         </div>
     </div>
 
     <div class="catering-entry">
         <div>
-            <label for="time" class="form-subheader">Pickup Time: </label>
+            <label for="people" class="form-subheader">
+                Number of People: <span *ngIf="requiredField('people')" class="required">*</span>
+            </label>
         </div>
         <div>
-            <input class="catering-form-box" type="text" formControlName="time">
-        </div>
-    </div>
-
-    <div class="catering-entry">
-        <div>
-            <label for="occasion" class="form-subheader">Occasion: </label>
-        </div>
-        <div>
-            <input class="catering-form-box" type="text" formControlName="occasion">
+            <input class="catering-form-box" [class.invalid]="invalidField('people')" type="text" formControlName="people">
+            <div *ngIf="invalidField('people')" class="error-message">
+                {{errorMessage('people')}}
+            </div>
         </div>
     </div>
 
     <div class="catering-entry">
         <div>
-            <label for="description" class="form-subheader">Description: </label>
+            <label for="company" class="form-subheader">
+                Company: <span *ngIf="requiredField('company')" class="required">*</span>
+            </label>
         </div>
         <div>
-            <input class="catering-larger-form-box" type="text" formControlName="description">
+            <input class="catering-form-box" [class.invalid]="invalidField('company')" type="text" formControlName="company">
+            <div *ngIf="invalidField('company')" class="error-message">
+                {{errorMessage('company')}}
+            </div>
+        </div>
+    </div>
+
+    <div class="catering-entry">
+        <div>
+            <label for="date" class="form-subheader">
+                Date (MM-DD-YYYY) : <span *ngIf="requiredField('date')" class="required">*</span>
+            </label>
+        </div>
+        <div>
+            <input class="catering-form-box" [class.invalid]="invalidField('date')" type="text" formControlName="date">
+            <div *ngIf="invalidField('date')" class="error-message">
+                {{errorMessage('date')}}
+            </div>
+        </div>
+    </div>
+
+    <div class="catering-entry">
+        <div>
+            <label for="time" class="form-subheader">
+                Pickup Time: <span *ngIf="requiredField('time')" class="required">*</span>
+            </label>
+        </div>
+        <div>
+            <input class="catering-form-box" [class.invalid]="invalidField('time')" type="text" formControlName="time">
+            <div *ngIf="invalidField('time')" class="error-message">
+                {{errorMessage('time')}}
+            </div>
+        </div>
+    </div>
+
+    <div class="catering-entry">
+        <div>
+            <label for="occasion" class="form-subheader">
+                Occasion: <span *ngIf="requiredField('occasion')" class="required">*</span>
+            </label>
+        </div>
+        <div>
+            <input class="catering-form-box" [class.invalid]="invalidField('occasion')" type="text" formControlName="occasion">
+            <div *ngIf="invalidField('occasion')" class="error-message">
+                {{errorMessage('occasion')}}
+            </div>
+        </div>
+    </div>
+
+    <div class="catering-entry">
+        <div>
+            <label for="description" class="form-subheader">
+                Description: <span *ngIf="requiredField('description')" class="required">*</span>
+            </label>
+        </div>
+        <div>
+            <input class="catering-larger-form-box" [class.invalid]="invalidField('description')" type="text" formControlName="description">
+            <div *ngIf="invalidField('description')" class="error-message">
+                {{errorMessage('description')}}
+            </div>
         </div>
     </div>
 
