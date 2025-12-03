@@ -1,0 +1,42 @@
+/* Reuse simple form styles similar to catering-information */
+.catering-entry {
+	margin: 2rem 5rem 2rem 5rem;
+	font-size: 1.1rem;
+}
+
+.form-subheader {
+	display: block;
+	margin-bottom: 1rem;
+}
+
+#contact-submit-button {
+	margin: 0 5rem 2rem 5rem;
+	float: right;
+}
+
+.catering-form-box {
+	width: 20rem;
+	height: 2rem;
+	font-size: 16px;
+}
+
+.catering-larger-form-box {
+	width: 400px;
+	height: 100px;
+	font-size: 16px;
+}
+
+.invalid {
+	border: 2px solid red;
+}
+
+.required {
+	color: red;
+	font-weight: bold;
+}
+
+.error-message {
+	color: red;
+	font-size: 0.85em;
+	margin-top: 4px;
+}

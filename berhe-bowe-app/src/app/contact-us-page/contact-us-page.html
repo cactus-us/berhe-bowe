@@ -1,1 +1,61 @@
-<p>contact-us-page works!</p>
+<form [formGroup]="contactForm">
+	<div class="catering-entry">
+		<div>
+			<label for="firstName" class="form-subheader">
+				First Name: <span *ngIf="requiredField('firstName')" class="required">*</span>
+			</label>
+		</div>
+		<div>
+			<input class="catering-form-box" [class.invalid]="invalidField('firstName')" type="text" formControlName="firstName">
+			<div *ngIf="invalidField('firstName')" class="error-message">
+				{{ errorMessage('firstName') }}
+			</div>
+		</div>
+	</div>
+
+	<div class="catering-entry">
+		<div>
+			<label for="lastName" class="form-subheader">
+				Last Name: <span *ngIf="requiredField('lastName')" class="required">*</span>
+			</label>
+		</div>
+		<div>
+			<input class="catering-form-box" [class.invalid]="invalidField('lastName')" type="text" formControlName="lastName">
+			<div *ngIf="invalidField('lastName')" class="error-message">
+				{{ errorMessage('lastName') }}
+			</div>
+		</div>
+	</div>
+
+	<div class="catering-entry">
+		<div>
+			<label for="email" class="form-subheader">
+				Email: <span *ngIf="requiredField('email')" class="required">*</span>
+			</label>
+		</div>
+		<div>
+			<input class="catering-form-box" [class.invalid]="invalidField('email')" type="text" formControlName="email">
+			<div *ngIf="invalidField('email')" class="error-message">
+				{{ errorMessage('email') }}
+			</div>
+		</div>
+	</div>
+
+	<div class="catering-entry">
+		<div>
+			<label for="message" class="form-subheader">
+				Your Message: <span *ngIf="requiredField('message')" class="required">*</span>
+			</label>
+		</div>
+		<div>
+			<input class="catering-larger-form-box" [class.invalid]="invalidField('message')" type="text" formControlName="message">
+			<div *ngIf="invalidField('message')" class="error-message">
+				{{ errorMessage('message') }}
+			</div>
+		</div>
+	</div>
+
+	<div>
+		<button type="button" (click)="submitContact()" id="contact-submit-button">Submit</button>
+	</div>
+</form>
