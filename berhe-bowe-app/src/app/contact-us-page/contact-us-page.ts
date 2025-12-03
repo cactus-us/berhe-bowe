@@ -4,10 +4,9 @@ import { ReactiveFormsModule, FormGroup, FormControl, Validators, AbstractContro
 
 @Component({
   selector: 'app-contact-us-page',
-  standalone: true,
   imports: [ReactiveFormsModule, CommonModule],
   templateUrl: './contact-us-page.html',
-  styleUrls: ['./contact-us-page.css'],
+  styleUrl: './contact-us-page.css',
 })
 export class ContactUsPage {
   whitespaceOnly = (control: AbstractControl): ValidationErrors | null => {

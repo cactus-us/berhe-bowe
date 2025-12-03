@@ -3,10 +3,9 @@ import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-locations-page',
-  standalone: true,
   imports: [CommonModule],
   templateUrl: './locations-page.html',
-  styleUrls: ['./locations-page.css']
+  styleUrl: './locations-page.css',
 })
 export class LocationsPage {
 
