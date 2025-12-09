@@ -82,12 +82,12 @@ export class MenuPage {
     },
     {
       name: 'Lasagna alla Bolognese',
-      image: 'LasagnaallaBolognese.png',
+      image: 'Lasagnaalforno.png',
       description: 'Layers of pasta, rich meat tomato sauce, béchamel & cheese.'
     },
     {
       name: 'Grilled Salmon',
-      image: 'GrilledSalmon.png',
+      image: 'GrilledSalmonSalad.png',
       description: 'Fresh salmon grilled & served with light seasoning with a simple side of roasted veggies.'
     }
   ];
