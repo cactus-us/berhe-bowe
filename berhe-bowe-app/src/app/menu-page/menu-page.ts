@@ -122,29 +122,29 @@ export class MenuPage {
 
   desserts = [
     {
-      name: 'Tiramisu',
-      image: 'Tiramisu.png',
-      description: 'Classic Italian dessert with coffee-soaked ladyfingers'
+      name: 'Italian Buckwheat and Jam Cake',
+      image: 'ItalianBuckwheatandJamCake.png',
+      description: 'Made with buckwheat flour, naturally gluten-free, filled with mixed berry jam and topped with powdered sugar.'
     },
     {
-      name: 'Cannoli',
-      image: 'Cannoli.png',
-      description: 'Crispy pastry shells filled with sweet ricotta cream'
+      name: 'Tiramisu Cake',
+      image: 'TiramisuCake.png',
+      description: 'Sponge cake layered with mascarpone cream and whipped cream.'
     },
     {
-      name: 'Gelato',
-      image: 'Gelato.png',
-      description: 'Italian ice cream in assorted flavors'
+      name: 'Occhi di Bue',
+      image: 'OcchidiBue.png',
+      description: 'Buttery shortbread rounds that has jam or chocolate in the center as well.'
     },
     {
-      name: 'Cheesecake',
-      image: 'Cheesecake.png',
-      description: 'Creamy New York style cheesecake'
+      name: 'Saffron Pannacotta',
+      image: 'SaffronPannacotta.png',
+      description: 'Smooth and velvety panna cotta (flavored with saffron), delicate spiced taste.'
     },
     {
-      name: 'Chocolate Lava Cake',
-      image: 'ChocolateLavaCake.png',
-      description: 'Warm chocolate cake with molten center'
+      name: 'Zeppole di San Giuseppe',
+      image: 'ZeppolediSanGiuseppe.png',
+      description: 'Is baked until golden, contains vanilla cream, & is topped with a cherry.'
     }
   ];
 
