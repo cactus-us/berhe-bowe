@@ -12,27 +12,27 @@ export class MenuPage {
     {
       name: 'Bruschetta',
       image: 'Bruschetta.png',
-      description: 'Toasted bread topped with fresh tomatoes, basil, and garlic'
+      description: 'Toasted bread topped with fresh tomatoes, basil, and olive oil. Light and always a go-to starter!'
     },
     {
-      name: 'Mozzarella Sticks',
-      image: 'MozzarellaSticks.png',
-      description: 'Crispy fried mozzarella served with marinara sauce'
+      name: 'Arancini',
+      image: 'Arancini.png',
+      description: 'Crispy fried rice balls (usually stuffed with cheese or meat).'
     },
     {
-      name: 'Calamari',
-      image: 'Calamari.png',
-      description: 'Lightly breaded and fried squid rings with lemon'
+      name: 'Calamari Fritti',
+      image: 'CalamarifrittiCalamari.png',
+      description: 'Fried squid rings served with a dipping sauce.'
     },
     {
-      name: 'Garlic Bread',
-      image: 'GarlicBread.png',
-      description: 'Fresh baked bread with garlic butter and herbs'
+      name: 'Caprese Salad',
+      image: 'CapreseSalad.png',
+      description: 'Sliced tomatoes, mozzarella, and basil with a drizzle of olive oil.'
     },
     {
-      name: 'Wings',
-      image: 'Wings.png',
-      description: 'Classic buffalo wings with ranch or blue cheese'
+      name: "Olive all'Ascolana",
+      image: 'OliveallAscolana.png',
+      description: 'Stuffed olives that are breaded and fried (crunchy on the outside and savory inside).'
     }
   ];
 
