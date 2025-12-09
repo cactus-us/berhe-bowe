@@ -54,12 +54,12 @@ export class MenuPage {
     },
     {
       name: 'Tuna Panini',
-      image: 'TunaPanini.png',
+      image: 'SicilianTunaSaladSandwich.png',
       description: 'Toasted Italian bread layered with tuna, light mayo, and crisp vegetables.'
     },
     {
       name: 'Chicken Panini',
-      image: 'ChickenPanini.png',
+      image: 'ItalianGrilledChickenPaniniSandwich.png',
       description: 'Grilled Italian-style chicken sandwich, easy and filling for lunch.'
     }
   ];
