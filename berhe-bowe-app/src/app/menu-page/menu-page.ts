@@ -81,14 +81,14 @@ export class MenuPage {
       description: 'Our family recipe with Italian sausage and peppers'
     },
     {
-      name: 'Eggplant Parmesan',
-      image: 'EggplantParmesan.png',
-      description: 'Layered eggplant with marinara and mozzarella'
+      name: 'Lasagna alla Bolognese',
+      image: 'LasagnaallaBolognese.png',
+      description: 'Layers of pasta, rich meat tomato sauce, béchamel & cheese.'
     },
     {
-      name: 'Lasagna',
-      image: 'Lasagna.png',
-      description: 'Homemade lasagna with meat sauce and ricotta'
+      name: 'Grilled Salmon',
+      image: 'GrilledSalmon.png',
+      description: 'Fresh salmon grilled & served with light seasoning with a simple side of roasted veggies.'
     }
   ];
 
