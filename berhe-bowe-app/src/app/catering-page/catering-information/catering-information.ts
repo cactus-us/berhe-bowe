@@ -207,7 +207,7 @@ export class CateringInformation {
 
   submitInformation() {
     if ( this.cateringForm.valid ) {
-      this.router.navigate ( [ '../catering-order' ] );
+      this.router.navigate ( [ '/catering/catering-order' ] );
     } else {
       Object.keys ( this.cateringForm.controls ).forEach ( key => {
         this.cateringForm.get ( key )?.markAsTouched ();

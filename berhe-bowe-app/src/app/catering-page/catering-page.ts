@@ -8,5 +8,4 @@ import { RouterOutlet } from "@angular/router";
   styleUrl: './catering-page.css',
 })
 export class CateringPage {
-
 }

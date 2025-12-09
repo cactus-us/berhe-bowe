@@ -1,34 +1,92 @@
+<h3 id="catering-information">One order of any item serves up to ten people.</h3>
 <h2 class="catering-header">Appetizers</h2>
-<div id="catering-apps">
-
+<div class="catering-items">
+    <div class="catering-item" *ngFor="let item of Appetizers">
+        <div>
+            <img [src]="item.image">
+            <p>{{ item.name }} - {{ item.description }}</p>
+        </div>
+        <div class="order-button-container">
+            <app-catering-order-button class="order-button"
+            [(quantity)]="item.quantity">
+            </app-catering-order-button>
+        </div>
+    </div>
 </div>
 
-<h2 class="catering-header">Salads</h2>
-<div id="catering-salads">
 
+<h2 class="catering-header">Sandwiches</h2>
+<div class="catering-items">
+    <div class="catering-item" *ngFor="let item of Sandwiches">
+        <div>
+            <img [src]="item.image">
+            <p>{{ item.name }} - {{ item.description }}</p>
+        </div>
+        <div class="order-button-container">
+            <app-catering-order-button class="order-button"
+            [(quantity)]="item.quantity">
+            </app-catering-order-button>
+        </div>
+    </div>
 </div>
 
-<h2 class="catering-header">Meats</h2>
-<div id="catering-meats">
-
+<h2 class="catering-header">Entrees</h2>
+<div class="catering-items">
+    <div class="catering-item" *ngFor="let item of Entrees">
+        <div>
+            <img [src]="item.image">
+            <p>{{ item.name }} - {{ item.description }}</p>
+        </div>
+        <div class="order-button-container">
+            <app-catering-order-button class="order-button"
+            [(quantity)]="item.quantity">
+            </app-catering-order-button>
+        </div>
+    </div>
 </div>
 
-<h2 class="catering-header">Pastas</h2>
-<div id="catering-pastas">
-
-</div>
-
-<h2 class="catering-header">Pizzas</h2>
-<div id="catering-pizzas">
-
-</div>
-
-<h2 class="catering-header">Sides</h2>
-<div id="catering-sides">
-
+<h2 class="catering-header">Beverages</h2>
+<div class="catering-items">
+    <div class="catering-item" *ngFor="let item of Beverages">
+        <div>
+            <img [src]="item.image">
+            <p>{{ item.name }} - {{ item.description }}</p>
+        </div>
+        <div class="order-button-container">
+            <app-catering-order-button class="order-button"
+            [(quantity)]="item.quantity">
+            </app-catering-order-button>
+        </div>
+    </div>
 </div>
 
 <h2 class="catering-header">Desserts</h2>
-<div id="catering-desserts">
-
+<div class="catering-items">
+    <div class="catering-item" *ngFor="let item of Desserts">
+        <div>
+            <img [src]="item.image">
+            <p>{{ item.name }} - {{ item.description }}</p>
+        </div>
+        <div class="order-button-container">
+            <app-catering-order-button class="order-button"
+            [(quantity)]="item.quantity">
+            </app-catering-order-button>
+        </div>
+    </div>
 </div>
+
+<div>
+    <button type="button" (click)="openConfirmModal()" id="catering-order-button">Submit Order</button>
+</div>
+
+<div class="modal-backdrop" *ngIf="showConfirmModal">
+  <div class="modal">
+    <h3>Confirm Order</h3>
+    <p>Are you sure you want to submit your finalized catering order?</p>
+
+    <button class="confirm" (click)="submissionConfirm()">Confirm</button>
+    <button class="cancel" (click)="showConfirmModal = false">Cancel</button>
+  </div>
+</div>
+
+

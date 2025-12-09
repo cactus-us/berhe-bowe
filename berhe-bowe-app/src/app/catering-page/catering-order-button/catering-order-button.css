@@ -1,0 +1,26 @@
+.quantity-selector {
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: .5rem;
+  max-width: auto;
+}
+
+.quantity-button {
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.quantity-button:hover {
+  /* background-color: #e0e0e0; */
+}
+
+.quantity-input {
+  width: 40px;
+  text-align: center;
+  border: none;
+  font-size: 16px;
+  outline: none;
+}
