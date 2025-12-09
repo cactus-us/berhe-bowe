@@ -94,29 +94,29 @@ export class MenuPage {
 
   beverages = [
     {
-      name: 'Italian Soda',
-      image: 'ItalianSoda.png',
-      description: 'Sparkling water with flavored syrup and cream'
+      name: 'Italian Cream Soda',
+      image: 'ItalianCreamSoda.png',
+      description: 'Flavored syrup mixed with soda water, topped with cream.'
     },
     {
-      name: 'Espresso',
-      image: 'Espresso.png',
-      description: 'Rich and bold Italian coffee'
+      name: 'Zabaione',
+      image: 'Zabaione.png',
+      description: 'This drink is made with egg yolks, sugar, & marsala wine (sometimes vin santo or passito).'
+    },
+    {
+      name: 'Orzata',
+      image: 'Orzata.png',
+      description: 'A sweet, milky white drink (made from barley) with almonds or orange blossom water.'
+    },
+    {
+      name: 'Latte Macchiato',
+      image: 'LatteMacchiato.png',
+      description: 'Consits of layers of warm milk, espresso coffee, & milk froth as well!'
     },
     {
       name: 'Cappuccino',
       image: 'Cappuccino.png',
-      description: 'Espresso with steamed milk and foam'
-    },
-    {
-      name: 'Lemonade',
-      image: 'Lemonade.png',
-      description: 'Fresh squeezed lemonade'
-    },
-    {
-      name: 'Iced Tea',
-      image: 'IcedTea.png',
-      description: 'Freshly brewed sweetened or unsweetened tea'
+      description: 'Coffee made with equal parts espresso, steamed milk, & foam (rich and smooth flavor).'
     }
   ];
 
