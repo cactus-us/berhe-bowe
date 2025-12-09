@@ -8,7 +8,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './menu-page.css',
 })
 export class MenuPage {
-  happyHour = [
+  happyHourItems = [
     {
       name: 'Bruschetta',
       image: 'Bruschetta.png',
@@ -36,7 +36,7 @@ export class MenuPage {
     }
   ];
 
-  lunch = [
+  lunchItems = [
     {
       name: 'Margherita Pizza',
       image: 'MargheritaPizza.png',
@@ -64,7 +64,7 @@ export class MenuPage {
     }
   ];
 
-  dinner = [
+  dinnerItems = [
     {
       name: 'Chicken Parmesan',
       image: 'ChickenParmesan.png',
@@ -92,7 +92,7 @@ export class MenuPage {
     }
   ];
 
-  beverages = [
+  beverageItems = [
     {
       name: 'Italian Cream Soda',
       image: 'ItalianCreamSoda.png',
@@ -120,7 +120,7 @@ export class MenuPage {
     }
   ];
 
-  desserts = [
+  dessertItems = [
     {
       name: 'Italian Buckwheat and Jam Cake',
       image: 'ItalianBuckwheatandJamCake.png',
@@ -148,10 +148,7 @@ export class MenuPage {
     }
   ];
 
-  scrollTo(sectionId: string) {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
+  goToSection(section: string) {
+    document.getElementById(section)?.scrollIntoView({ behavior: 'smooth' });
   }
 }

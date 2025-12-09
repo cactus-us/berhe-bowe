@@ -1,69 +1,69 @@
 <h1 id="menu-title">Menu</h1>
 
-<div class="menu-nav">
-  <button class="nav-button" (click)="scrollTo('happy-hour')">Happy Hour</button>
-  <button class="nav-button" (click)="scrollTo('lunch')">Lunch</button>
-  <button class="nav-button" (click)="scrollTo('dinner')">Dinner</button>
-  <button class="nav-button" (click)="scrollTo('beverages')">Beverages</button>
-  <button class="nav-button" (click)="scrollTo('desserts')">Desserts</button>
+<div class="menu-buttons">
+  <button (click)="goToSection('happy-hour')">Happy Hour</button>
+  <button (click)="goToSection('lunch')">Lunch</button>
+  <button (click)="goToSection('dinner')">Dinner</button>
+  <button (click)="goToSection('beverages')">Beverages</button>
+  <button (click)="goToSection('desserts')">Desserts</button>
 </div>
 
-<section id="happy-hour" class="menu-section">
-  <h2 class="section-title">Happy Hour</h2>
-  <p class="section-subtitle">Monday - Friday, 4pm - 6pm</p>
+<div id="happy-hour">
+  <h2>Happy Hour</h2>
+  <p>Monday - Friday, 4pm - 6pm</p>
   <div class="menu-items">
-    <div class="menu-item" *ngFor="let item of happyHour">
-      <img [src]="item.image" class="item-image">
-      <p class="item-name">{{ item.name }}</p>
-      <p class="item-description">{{ item.description }}</p>
+    <div class="menu-item" *ngFor="let item of happyHourItems">
+      <img [src]="item.image">
+      <p>{{ item.name }}</p>
+      <p>{{ item.description }}</p>
     </div>
   </div>
-</section>
+</div>
 
-<section id="lunch" class="menu-section">
-  <h2 class="section-title">Lunch</h2>
-  <p class="section-subtitle">Tuesday - Sunday, 11am - 3pm</p>
+<div id="lunch">
+  <h2>Lunch</h2>
+  <p>Tuesday - Sunday, 11am - 3pm</p>
   <div class="menu-items">
-    <div class="menu-item" *ngFor="let item of lunch">
-      <img [src]="item.image" class="item-image">
-      <p class="item-name">{{ item.name }}</p>
-      <p class="item-description">{{ item.description }}</p>
+    <div class="menu-item" *ngFor="let item of lunchItems">
+      <img [src]="item.image">
+      <p>{{ item.name }}</p>
+      <p>{{ item.description }}</p>
     </div>
   </div>
-</section>
+</div>
 
-<section id="dinner" class="menu-section">
-  <h2 class="section-title">Dinner</h2>
-  <p class="section-subtitle">Tuesday - Sunday, 3pm - 10pm</p>
+<div id="dinner">
+  <h2>Dinner</h2>
+  <p>Tuesday - Sunday, 3pm - 10pm</p>
   <div class="menu-items">
-    <div class="menu-item" *ngFor="let item of dinner">
-      <img [src]="item.image" class="item-image">
-      <p class="item-name">{{ item.name }}</p>
-      <p class="item-description">{{ item.description }}</p>
+    <div class="menu-item" *ngFor="let item of dinnerItems">
+      <img [src]="item.image">
+      <p>{{ item.name }}</p>
+      <p>{{ item.description }}</p>
     </div>
   </div>
-</section>
+</div>
 
-<section id="beverages" class="menu-section">
-  <h2 class="section-title">Beverages</h2>
-  <p class="section-subtitle">Available all day</p>
+<div id="beverages">
+  <h2>Beverages</h2>
+  <p>Available all day</p>
   <div class="menu-items">
-    <div class="menu-item" *ngFor="let item of beverages">
-      <img [src]="item.image" class="item-image">
-      <p class="item-name">{{ item.name }}</p>
-      <p class="item-description">{{ item.description }}</p>
+    <div class="menu-item" *ngFor="let item of beverageItems">
+      <img [src]="item.image">
+      <p>{{ item.name }}</p>
+      <p>{{ item.description }}</p>
     </div>
   </div>
-</section>
+</div>
 
-<section id="desserts" class="menu-section">
-  <h2 class="section-title">Desserts</h2>
-  <p class="section-subtitle">Made fresh daily</p>
+<div id="desserts">
+  <h2>Desserts</h2>
+  <p>Made fresh daily</p>
   <div class="menu-items">
-    <div class="menu-item" *ngFor="let item of desserts">
-      <img [src]="item.image" class="item-image">
-      <p class="item-name">{{ item.name }}</p>
-      <p class="item-description">{{ item.description }}</p>
+    <div class="menu-item" *ngFor="let item of dessertItems">
+      <img [src]="item.image">
+      <p>{{ item.name }}</p>
+      <p>{{ item.description }}</p>
     </div>
   </div>
-</section>
+</div>
