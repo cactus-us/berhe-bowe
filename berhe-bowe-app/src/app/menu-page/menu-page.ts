@@ -21,7 +21,7 @@ export class MenuPage {
     },
     {
       name: 'Calamari Fritti',
-      image: 'CalamarifrittiCalamari.png',
+      image: 'CalamarifrittiFriedCalamari.png',
       description: 'Fried squid rings served with a dipping sauce.'
     },
     {
