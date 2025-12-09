@@ -38,29 +38,29 @@ export class MenuPage {
 
   lunch = [
     {
-      name: 'Caesar Salad',
-      image: 'CaesarSalad.png',
-      description: 'Crisp romaine lettuce with parmesan and croutons'
-    },
-    {
-      name: 'Caprese Sandwich',
-      image: 'CapreseSandwich.png',
-      description: 'Fresh mozzarella, tomato, and basil on ciabatta'
-    },
-    {
-      name: 'Minestrone Soup',
-      image: 'MinestroneSoup.png',
-      description: 'Hearty vegetable soup with pasta and beans'
-    },
-    {
       name: 'Margherita Pizza',
       image: 'MargheritaPizza.png',
-      description: 'Classic pizza with tomato, mozzarella, and basil'
+      description: 'Thin-crust pizza with tomato, mozzarella, and basil.'
     },
     {
-      name: 'Pasta Primavera',
-      image: 'PastaPrimavera.png',
-      description: 'Fresh vegetables tossed with pasta in light garlic sauce'
+      name: 'Italian Panini',
+      image: 'ItalianPanini.png',
+      description: 'Italian Panini (mozzarella / tomato / basil).'
+    },
+    {
+      name: 'Spaghetti Pomodoro',
+      image: 'SpaghettiPomodoro.png',
+      description: 'Pasta with simple tomato-basil sauce and a sprinkle of cheese.'
+    },
+    {
+      name: 'Tuna Panini',
+      image: 'TunaPanini.png',
+      description: 'Toasted Italian bread layered with tuna, light mayo, and crisp vegetables.'
+    },
+    {
+      name: 'Chicken Panini',
+      image: 'ChickenPanini.png',
+      description: 'Grilled Italian-style chicken sandwich, easy and filling for lunch.'
     }
   ];
 
