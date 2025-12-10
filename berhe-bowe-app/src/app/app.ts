@@ -7,7 +7,7 @@ import { LuigisFooter } from './luigis-footer/luigis-footer';
 @Component({
   selector: 'app-root',
   imports: [RouterLink, RouterOutlet, MatToolbar, MatButton, LuigisFooter],
-  templateUrl: './index.html',
+  templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
