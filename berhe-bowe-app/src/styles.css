@@ -10,3 +10,8 @@ h1, h2, h3, h4, h5, h6, mat-toolbar, button, label {
 body, p, span, div, input, textarea, select {
     font-family: 'Merriweather', serif;
 }
+
+:root {
+    --header-and-footer-color: #fac9bc;
+    --page-color: #fdece7;
+}

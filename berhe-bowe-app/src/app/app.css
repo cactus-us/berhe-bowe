@@ -40,3 +40,11 @@ mat-toolbar {
 #header-toolbar button:hover {
     transform: scale(1.1);
 }
+
+mat-toolbar#header {
+    background-color: var(--header-and-footer-color) !important;
+}
+
+#page-container {
+    background-color: var(--page-color);
+}

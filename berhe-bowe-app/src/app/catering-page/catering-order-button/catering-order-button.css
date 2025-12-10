@@ -3,7 +3,7 @@
   border: 1px solid #ccc;
   border-radius: 4px;
   margin-right: .5rem;
-  max-width: auto;
+  max-width: fit-content;
 }
 
 .quantity-button {

@@ -1,6 +1,6 @@
 <div class="website-container">
   <div class = "header-container" >
-    <mat-toolbar>
+    <mat-toolbar id="header">
         <!-- Logo -->
         <span routerLink="/home">
           <img src="logo.png" alt="Logo" class = "logo" />
@@ -20,7 +20,11 @@
     </mat-toolbar>
   </div>
 
-  <router-outlet></router-outlet>
+  <div id="page-container">
+    <router-outlet></router-outlet>
+  </div>
 
-  <app-luigis-footer></app-luigis-footer>
+  <div id="footer-container">
+    <app-luigis-footer></app-luigis-footer>
+  </div>
 </div>
