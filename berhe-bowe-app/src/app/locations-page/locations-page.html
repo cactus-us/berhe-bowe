@@ -1,26 +1,19 @@
-<section class="page-container">
+<h1>Locations</h1>
+<p>Visit our three Luigi's locations</p>
 
-  <h1 class="title">Locations</h1>
-  <p class="subtitle">Visit our three welcoming Luigi’s locations</p>
-
-  <div class="locations-grid">
-    <div class="location-card" *ngFor="let loc of locations">
-      <img [src]="loc.image" class="location-img">
-
-      <div class="location-info">
-        <h2 class="location-name">{{ loc.name }}</h2>
-
-        <p class="info"><strong>Address:</strong> {{ loc.address }}</p>
-        <p class="info"><strong>Phone:</strong> {{ loc.phone }}</p>
-        <p class="info"><strong>Hours:</strong> {{ loc.hours }}</p>
-
-        <div class="party-section">
-          <h3>Party Room</h3>
-          <img [src]="loc.roomImage" class="party-room-img">
-          <p class="price"><strong>Rental Price:</strong> {{ loc.rentPrice }}</p>
-        </div>
+<div class="locations">
+  <div class="location" *ngFor="let loc of locations">
+    <img [src]="loc.image">
+    <div class="info">
+      <h2>{{ loc.name }}</h2>
+      <p><strong>Address:</strong> {{ loc.address }}</p>
+      <p><strong>Phone:</strong> {{ loc.phone }}</p>
+      <p><strong>Hours:</strong> {{ loc.hours }}</p>
+      <div class="party-room">
+        <h3>Party Room</h3>
+        <img [src]="loc.roomImage">
+        <p><strong>Price:</strong> {{ loc.rentPrice }}</p>
       </div>
     </div>
   </div>
-
-</section>
+</div>

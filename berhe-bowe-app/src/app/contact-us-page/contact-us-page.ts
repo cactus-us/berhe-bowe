@@ -9,88 +9,85 @@ import { ReactiveFormsModule, FormGroup, FormControl, Validators, AbstractContro
   styleUrl: './contact-us-page.css',
 })
 export class ContactUsPage {
-  whitespaceOnly = (control: AbstractControl): ValidationErrors | null => {
-    const val = control.value;
-    if (val && typeof val === 'string' && val.trim().length === 0) {
+  
+  checkWhitespace(control: AbstractControl): ValidationErrors | null {
+    if (control.value && control.value.trim().length === 0) {
       return { whitespace: true };
     }
     return null;
-  };
+  }
 
   contactForm = new FormGroup({
     firstName: new FormControl('', [
       Validators.required,
       Validators.pattern(/^[a-zA-Z\s]+$/),
       Validators.maxLength(100),
-      this.whitespaceOnly,
+      this.checkWhitespace,
     ]),
     lastName: new FormControl('', [
       Validators.required,
       Validators.pattern(/^[a-zA-Z\s]+$/),
       Validators.maxLength(100),
-      this.whitespaceOnly,
+      this.checkWhitespace,
     ]),
     email: new FormControl('', [
       Validators.required,
       Validators.email,
       Validators.maxLength(100),
-      this.whitespaceOnly,
+      this.checkWhitespace,
     ]),
     message: new FormControl('', [
       Validators.required,
       Validators.maxLength(300),
-      this.whitespaceOnly,
+      this.checkWhitespace,
     ]),
   });
 
-  invalidField(fieldName: string): boolean {
+  isInvalid(fieldName: string): boolean {
     const field = this.contactForm.get(fieldName);
-    return !!(field && field.invalid && field.touched);
+    if (field && field.invalid && field.touched) {
+      return true;
+    }
+    return false;
   }
 
-  requiredField(fieldName: string): boolean {
+  isRequired(fieldName: string): boolean {
     const field = this.contactForm.get(fieldName);
-    return field?.hasValidator(Validators.required) ?? false;
+    if (field && field.hasValidator(Validators.required)) {
+      return true;
+    }
+    return false;
   }
 
-  errorMessage(fieldName: string): string {
+  getErrorMessage(fieldName: string): string {
     const field = this.contactForm.get(fieldName);
 
     if (field?.hasError('required')) {
-      return 'Error: This field is required.';
+      return 'This field is required';
     }
 
     if (field?.hasError('whitespace')) {
-      return 'Error: This cannot contain only spaces.';
+      return 'Cannot be only spaces';
     }
 
     if (field?.hasError('maxlength')) {
-      const maxLength = field.getError('maxlength').requiredLength;
-      return `Error: Maximum ${maxLength} characters allowed.`;
+      return 'Too many characters';
     }
 
     if (field?.hasError('pattern')) {
-      switch (fieldName) {
-        case 'firstName':
-        case 'lastName':
-          return 'Error: Letters and spaces only.';
-        default:
-          return 'Error: Invalid format.';
-      }
+      return 'Letters and spaces only';
     }
 
     if (field?.hasError('email')) {
-      return 'Error: Invalid email address.';
+      return 'Invalid email';
     }
 
     return '';
   }
 
-  submitContact() {
+  onSubmit() {
     if (this.contactForm.valid) {
-      // For now, just log. In a real app, you would send this to a backend.
-      console.log('Contact form submitted:', this.contactForm.value);
-      // Optionally reset the form
+      console.log('Form submitted:', this.contactForm.value);
       this.contactForm.reset();
     } else {
       Object.keys(this.contactForm.controls).forEach((key) => {
