@@ -59,7 +59,10 @@
               "sourceMap": false,
               "budgets": [
                 { "type": "initial", "maximumWarning": "500kb", "maximumError": "1mb" }
-              ]
+              ],
+              "server": false,
+              "prerender": false,
+              "ssr": false
             }
           },
           "defaultConfiguration": "production"
