@@ -51,6 +51,15 @@
               "optimization": false,
               "extractLicenses": false,
               "sourceMap": true
+            },
+            "production-browser": {
+              "outputMode": "static",
+              "outputPath": "dist/berhe-bowe-app/browser",
+              "optimization": true,
+              "sourceMap": false,
+              "budgets": [
+                { "type": "initial", "maximumWarning": "500kb", "maximumError": "1mb" }
+              ]
             }
           },
           "defaultConfiguration": "production"

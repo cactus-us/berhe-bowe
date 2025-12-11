@@ -5,6 +5,8 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --configuration production",
+    "build:browser": "ng run berhe-bowe-app:build:production-browser",
+    "build:ssr": "ng run berhe-bowe-app:build:production-browser && ng run berhe-bowe-app:build:production",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:berhe-bowe-app": "node dist/berhe-bowe-app/server/server.mjs"
@@ -33,6 +35,7 @@
     "@angular/platform-server": "^20.3.0",
     "@angular/router": "^20.3.0",
     "@angular/ssr": "^20.3.10",
+    "@netlify/angular-runtime": "^3.0.1",
     "express": "^5.1.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0"
