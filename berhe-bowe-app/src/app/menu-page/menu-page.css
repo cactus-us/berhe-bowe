@@ -1,5 +1,6 @@
 #menu-title {
     margin-left: 5rem;
+    margin-right: 5rem;
     margin-top: 1rem;
 }
 
@@ -15,7 +16,31 @@
     padding: 10px 20px;
 }
 
-#happy-hour, #lunch, #dinner, #beverages, #desserts {
+#happy-hour {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 3rem;
+}
+
+#lunch {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 3rem;
+}
+
+#dinner {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 3rem;
+}
+
+#beverages {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 3rem;
+}
+
+#desserts {
     margin-left: 5rem;
     margin-right: 5rem;
     margin-top: 3rem;

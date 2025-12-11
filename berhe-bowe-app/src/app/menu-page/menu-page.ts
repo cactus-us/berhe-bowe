@@ -148,7 +148,10 @@ export class MenuPage {
     }
   ];
 
-  goToSection(section: string) {
-    document.getElementById(section)?.scrollIntoView({ behavior: 'smooth' });
+  goToSection(sectionName: string) {
+    const section = document.getElementById(sectionName);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
   }
 }

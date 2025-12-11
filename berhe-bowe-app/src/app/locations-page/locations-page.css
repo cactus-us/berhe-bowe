@@ -1,85 +1,51 @@
-.page-container {
-  padding: 40px 20px;
-}
-
-.title {
-  font-size: 2rem;
+h1 {
   margin-left: 5rem;
-  margin-bottom: 5px;
+  margin-top: 1rem;
 }
 
-.subtitle {
-  font-size: 1rem;
+p {
   margin-left: 5rem;
-  margin-bottom: 40px;
-  color: #444;
 }
 
-.locations-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
+.locations {
   margin-left: 5rem;
   margin-right: 5rem;
+  margin-top: 2rem;
 }
 
-.location-card {
-  padding: 30px;
+.location {
   border: 1px solid black;
-  border-radius: 2px;
+  padding: 2rem;
+  margin-bottom: 2rem;
   display: flex;
-  flex-direction: row;
-  gap: 30px;
-  align-items: flex-start;
+  gap: 2rem;
 }
 
-.location-img {
-  width: 40%;
-  max-width: 400px;
-  border-radius: 2px;
-  flex-shrink: 0;
-}
-
-.location-info {
-  flex: 1;
-}
-
-.location-name {
-  margin-top: 0;
-  margin-bottom: 15px;
-  font-size: 1.5rem;
-  font-weight: bold;
+.location img {
+  width: 400px;
+  height: auto;
 }
 
 .info {
-  margin: 8px 0;
-  color: #333;
-  line-height: 1.6;
+  flex: 1;
 }
 
-.party-section {
-  margin-top: 20px;
-  padding-top: 20px;
-  border-top: 1px solid #ddd;
-}
-
-.party-section h3 {
+.info h2 {
   margin-top: 0;
-  margin-bottom: 10px;
-  font-size: 1.2rem;
 }
 
-.party-room-img {
-  width: 100%;
-  max-width: 200px;
+.info p {
+  margin: 0.5rem 0;
+}
+
+.party-room {
+  margin-top: 2rem;
+  border-top: 1px solid black;
+  padding-top: 1rem;
+}
+
+.party-room img {
+  width: 200px;
   height: auto;
-  border-radius: 2px;
-  margin: 10px 0;
-  display: block;
-}
-
-.price {
-  margin-top: 10px;
-  color: #000;
-  font-weight: bold;
+  margin: 1rem 0;
 }
